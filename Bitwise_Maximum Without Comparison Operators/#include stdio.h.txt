@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
+    int a,b;
+    scanf("%d %d",&a,&b);
+    int k=a-b;
+    int p=k>>31;
+    int s=p&1;
+    /*if(s){
+        printf("%d",b);
+    }
+    else{
+        printf("%d",a);
+    }*/
+    int v=(s)?printf("%d",b):printf("%d",a);
+    
+    
+    return 0;
+}
